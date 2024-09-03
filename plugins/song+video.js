@@ -20,12 +20,22 @@ let desc = `
 ⚡ *ANJANA-MD SONG DOWNLOADER* 🎧
 
 tittle:${data.tittle}
+
+
 description: ${data.description}
+
+
 time: ${data.timestamp}
+
+
 ago: ${data.ago}
+
+
 views: ${data.views}
 
-MADE BY 🍂👻𝘿𝘼𝙎𝙐𝙉 𝙈𝘼𝙓 🥵🍁`
+
+
+MADE BY 𝙳𝙰𝚂𝚄𝙽-𝙼𝙰𝚇`
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc,{quoted:mek});
     
@@ -66,12 +76,22 @@ let desc = `
 ⚡ *ANJANA-MD VIDEO DOWNLOADER* 🎧
 
 tittle:${data.tittle}
+
+
 description: ${data.description}
+
+
 time: ${data.timestamp}
+
+
 ago: ${data.ago}
+
+
 views: ${data.views}
 
-MADE BY 🍂👻𝘿𝘼𝙎𝙐𝙉 𝙈𝘼𝙓 🥵🍁`
+
+
+MADE BY 𝙳𝙰𝚂𝚄𝙽-𝙼𝙰𝚇`
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc,{quoted:mek});
     
