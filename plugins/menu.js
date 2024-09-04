@@ -3,7 +3,7 @@ const {cmd , commands} = require('../command')
 
 cmd({
     pattern: "menu",
-    desc: "Bot Command Panel",
+    desc: " Get Bot Command Panel",
     category: "main",
     filename: __filename
 },
@@ -59,7 +59,7 @@ ${menu.group}
 
  POWERD BY 𝙳𝙰𝚂𝚄𝙽 𝙼𝙰𝚇 💚
 `
-await conn.sendMessage(from,{text:madeMenu,{quoted:mek}}]
+await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/1636c1eb652c31db7c8a2.jpg"},caption:madeMenu},{quoted:mek}}]
 
 
 }catch(e){
