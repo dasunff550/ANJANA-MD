@@ -17,7 +17,7 @@ const util = require('util')
 const { sms,downloadMediaMessage } = require('./lib/msg')
 const axios = require('axios')
 const { File } = require('megajs')
-const prefix = '.'
+
 
 const ownerNumber = ['94760105256,94765775550']
 
@@ -43,6 +43,12 @@ async function connectToWA() {
 const connectDB = require('./lib/mongodb')
 connectDB();
 //===============================================
+const {readeEnv} = require('./lib/database)
+const config = await readEnv();
+const prefix = config.PREFIX
+
+//===============================================
+
 console.log("Connecting ANJANA-MD whatsapp bot 🧬");
 const { state, saveCreds } = await useMultiFileAuthState(__ANJANA-MD + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
