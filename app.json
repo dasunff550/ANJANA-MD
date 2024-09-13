@@ -1,0 +1,26 @@
+{
+  "name": "ANJANA-MD",
+  "description": "Javascript WhatsApp Bot Created By 𝙳𝙰𝚂𝚄𝙽 𝙼𝙰𝚇",
+  "logo": "https://telegra.ph/file/1636c1eb652c31db7c8a2.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "MONGODB": {
+      "description": "Put your mongodb url..",
+      "required": true
+    }
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
